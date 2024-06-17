@@ -1,0 +1,122 @@
+.login-bg {
+  min-height: 100vh;
+  max-height: 100%;
+  background-image: url("https://res.cloudinary.com/daxizvsge/image/upload/v1712820173/bg_wlo9lh.webp");
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  filter: brightness(80%);
+  background-position: center center;
+}
+
+.login-container {
+  width: 100%;
+  margin: auto;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.form-container {
+  border-radius: 8px;
+  padding: 25px;
+  height: 450px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*border-width: 1px;
+    border-style: solid;
+    border-color: white;*/
+}
+
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+.form-heading {
+  font-size: 35px;
+  font-family: "Bree Serif";
+  color: #ffffff;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: normal;
+}
+
+.input-style {
+  border-width: 0px;
+  border-radius: 20px;
+  padding: 18px;
+  background-color: transparent;
+  width: 97%;
+  background: rgba(255, 255, 255, 0.1);
+  margin-bottom: 9px;
+  font-size: 18px;
+  outline: none;
+  color: #ffffff;
+}
+
+.input-style::placeholder {
+  color: white;
+  font-size: 18px;
+}
+
+.sign-in-button {
+  width: 92%;
+  height: 43px;
+  background: #fbceb5;
+  border-radius: 22px;
+  font-size: 16px;
+  font-family: "Roboto";
+  cursor: pointer;
+  outline: none;
+  color: black;
+  border-width: 0px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.no-account-text {
+  color: white;
+  font-size: 17px;
+  font-family: "Roboto";
+}
+
+.create-anchor,
+.signin-page-anchor {
+  text-decoration: underline;
+  cursor: pointer;
+  color: white !important;
+}
+
+.error-msg {
+  color: red;
+  margin-top: -7px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-family: "Roboto";
+  align-self: flex-start;
+  padding-left: 25px;
+}
+
+.mt-5 {
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+.signin-navigate {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: #ffffff;
+  text-decoration: underline;
+  cursor: pointer;
+}
