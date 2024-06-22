@@ -1,0 +1,176 @@
+.navbar {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 120px;
+  padding-right: 120px;
+  background: linear-gradient(90deg, rgb(248, 226, 203), rgb(255, 200, 160));
+}
+
+.nav-logo {
+  height: 100px;
+  width: 350px;
+  border-radius: 15px;
+}
+
+.navbar-inner-container {
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+}
+
+.nav-items-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  margin-right: 15px;
+}
+
+.nav-item {
+  list-style-type: none;
+  margin-right: 12px;
+}
+
+.nav-item-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+.nav-item-span {
+  margin-left: 5px;
+  font-size: 25px;
+  font-family: "Roboto";
+}
+
+.logout-button,
+.logout-popup-button,
+.cancel-popup-button {
+  height: 39px;
+  width: 100px;
+  background-color: rgb(66, 66, 222);
+  color: #ffffff;
+  border-width: 0px;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+  font-family: "Roboto";
+  margin-left: 5px;
+  font-size: 17px;
+}
+
+.logout-button-small {
+  display: none;
+}
+
+.logout-popup-container {
+  min-width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 170px;
+  background-color: whitesmoke;
+  border-radius: 8px;
+  padding-bottom: 10px;
+}
+
+.close-popup-button {
+  height: 40px;
+  width: 40px;
+  border-width: 0px;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  margin-left: auto;
+}
+
+.logout-description {
+  font-size: 18px;
+  font-family: "Roboto";
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.cancel-popup-button {
+  background-color: red;
+}
+
+.logout-popup-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1100px) {
+  .navbar {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .navbar {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .nav-logo {
+    width: 270px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .nav-logo {
+    height: 70px;
+    width: 200px;
+  }
+
+  .nav-item-span {
+    display: none;
+  }
+  .nav-items-container {
+    margin-right: 0px;
+  }
+  .logout-button-small {
+    display: block;
+    background-color: transparent;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    outline: none;
+    border-width: 0px;
+  }
+  .logout-button {
+    display: none;
+  }
+
+  .logout-popup-container {
+    width: 100vw;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .navbar {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .nav-logo {
+    width: 150px;
+    height: 70px;
+  }
+}

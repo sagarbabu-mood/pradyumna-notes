@@ -1,0 +1,225 @@
+.notes-bg {
+  min-height: 100vh;
+  max-height: 100%;
+  width: 100%;
+}
+
+.notes-inner {
+  width: 100%;
+  background-color: transparent;
+  padding: 20px;
+  height: 100%;
+}
+
+.notes-top-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  /*padding-left: 50px;
+  padding-right: 50px;*/
+}
+
+.your-notes-heading {
+  font-size: 35px;
+  font-family: "Roboto";
+}
+
+.add-button {
+  height: 60px;
+  width: 60px;
+  border-radius: 8px;
+  border-width: 1px;
+  border-style: solid;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  margin-left: auto;
+}
+
+.notes-items-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0px;
+  margin-top: 7px;
+  margin-left: 5px;
+}
+
+.loader-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-button-link {
+  margin-left: auto;
+}
+
+/* Background and container styles */
+.notes-bg {
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+  min-height: 100vh;
+  max-height: 100%;
+  width: 100%;
+}
+
+.notes-inner {
+  width: 100%;
+  background-color: transparent;
+  padding: 20px;
+  height: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.notes-inner:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Top container */
+.notes-top-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.your-notes-heading {
+  font-size: 35px;
+  font-family: "Roboto", sans-serif;
+  color: #2c3e50;
+  transition: color 0.3s ease;
+}
+
+.your-notes-heading:hover {
+  color: #34495e;
+}
+
+/* Add button styles */
+.add-button {
+  height: 60px;
+  width: 60px;
+  border-radius: 8px;
+  border-width: 0px;
+
+  border-color: #2c3e50;
+  background-color: #3498db;
+  color: #ffffff;
+  cursor: pointer;
+  outline: none;
+  margin-left: auto;
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-button:hover {
+  background-color: #2980b9;
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Notes items container */
+.notes-items-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0px;
+  margin-top: 7px;
+  margin-left: 5px;
+}
+
+/* Loader container */
+.loader-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-button-link {
+  margin-left: auto;
+}
+
+.notes-page-failure-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  padding: 15px;
+  height: 350px;
+  border-radius: 15px;
+}
+
+.failure-img {
+  height: 100px;
+  width: 100px;
+}
+
+.failure-description {
+  font-size: 18px;
+  font-family: "Roboto";
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.failure-retry-button {
+  height: 38px;
+  width: 100px;
+  border-radius: 8px;
+  border-width: 0px;
+  background-color: rgb(64, 64, 228);
+  color: white;
+  font-size: 15px;
+  font-family: "Roboto";
+  margin-top: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+.no-notes-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.no-notes-img {
+  height: 250px;
+  width: 250px;
+}
+
+.no-notes-description {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Roboto";
+  margin-top: 15px;
+  text-align: center;
+  color: #333333;
+}
+
+.add-note-redirect-button {
+  height: 38px;
+  width: 100px;
+  background-color: rgb(71, 71, 230);
+  color: white;
+  font-size: 18px;
+  font-family: "Roboto";
+  outline: none;
+  cursor: pointer;
+  border-width: 0px;
+  border-radius: 8px;
+  margin-top: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .notes-page-failure-container {
+    width: 90%;
+    max-width: 500px;
+  }
+}

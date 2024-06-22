@@ -1,0 +1,564 @@
+/*.password-item-header,
+.password-item {
+  display: flex;
+  flex-wrap: nowrap; 
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  font-size: 18px;
+}
+
+.password-item-header p,
+.password-item p {
+  margin: 0;
+  padding: 5px;
+  white-space: normal; 
+  word-break: break-word; 
+}
+
+.password-item-header p {
+  font-weight: bold;
+}
+
+.p-item-web-heading,
+.p-item-web {
+  flex: 2 1 40%; 
+}
+
+.p-item-username-heading,
+.p-item-username,
+.p-item-password-password,
+.p-item-password {
+  flex: 1 1 25%;
+}
+
+.p-item-edit-edit,
+.p-item-edit,
+.p-item-delete-delete,
+.p-item-delete {
+  flex: 0 1 10%; 
+}
+
+.edit-password-button,
+.delete-password-button {
+  background: #ffffff;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.edit-password-button:hover,
+.delete-password-button:hover {
+  background: #f0f0f0;
+  transform: scale(1.1);
+}
+
+
+.edit-password-button svg,
+.delete-password-button svg {
+  color: #ff6b6b; 
+}
+
+.password-check-popup-container {
+  min-width: 30vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 240px;
+  background-color: whitesmoke;
+  border-radius: 8px;
+  padding-bottom: 10px;
+}
+
+.password-check-popup-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 6px;
+  width: 100%;
+}
+
+.password-check-desc {
+  font-size: 18px;
+  font-family: "Roboto";
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.password-check-password-input {
+  font-size: 16px;
+  outline: none;
+  font-family: "Roboto";
+  border-width: 0px;
+  border-radius: 8px;
+  padding: 15px;
+  width: 80%;
+  margin-bottom: 8px;
+}
+
+.verify-popup-password-button {
+  font-size: 15px;
+  font-family: "Roboto";
+  color: white;
+  background-color: rgb(62, 62, 221);
+  height: 38px;
+  width: 100px;
+  border-width: 0px;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+  margin-top: 2px;
+}
+
+.error-msg {
+  color: red;
+  font-size: 15px;
+  font-family: "Roboto";
+  margin-top: 5px;
+  text-align: center;
+  align-self: center;
+}
+
+@media (max-width: 768px) {
+  .password-item-header,
+  .password-item {
+    flex-wrap: nowrap; 
+    overflow-x: auto; 
+    font-size: 12px;
+  }
+
+  .password-item-header p,
+  .password-item p {
+    flex: 1 1 20%; 
+    white-space: normal; 
+    word-break: break-word; 
+  }
+}
+*/
+/*
+.password-item-header,
+.password-item {
+  display: flex;
+  flex-wrap: nowrap; 
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  font-size: 18px;
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+  transition: background 0.5s ease;
+}
+
+.password-item-header p,
+.password-item p {
+  margin: 0;
+  padding: 5px;
+  white-space: normal; 
+  word-break: break-word; 
+}
+
+.password-item-header p {
+  font-weight: bold;
+}
+
+.p-item-web-heading,
+.p-item-web {
+  flex: 2 1 40%; 
+}
+
+.p-item-username-heading,
+.p-item-username,
+.p-item-password-password,
+.p-item-password {
+  flex: 1 1 25%; 
+}
+
+.p-item-edit-edit,
+.p-item-edit,
+.p-item-delete-delete,
+.p-item-delete {
+  flex: 0 1 10%; 
+}
+
+.edit-password-button,
+.delete-password-button {
+  background: linear-gradient(135deg, #cfdef3 0%, #e0eafc 100%);
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.edit-password-button:hover,
+.delete-password-button:hover {
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.edit-password-button svg,
+.delete-password-button svg {
+  color: #ff6b6b; 
+}
+
+.password-check-popup-container {
+  min-width: 30vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 240px;
+  background-color: whitesmoke;
+  border-radius: 8px;
+  padding-bottom: 10px;
+  transition: background 0.5s ease;
+}
+
+.password-check-popup-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 6px;
+  width: 100%;
+}
+
+.password-check-desc {
+  font-size: 18px;
+  font-family: "Roboto";
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.password-check-password-input {
+  font-size: 16px;
+  outline: none;
+  font-family: "Roboto";
+  border-width: 0px;
+  border-radius: 8px;
+  padding: 15px;
+  width: 80%;
+  margin-bottom: 8px;
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+}
+
+.verify-popup-password-button {
+  font-size: 15px;
+  font-family: "Roboto";
+  color: white;
+  background-color: rgb(62, 62, 221);
+  height: 38px;
+  width: 100px;
+  border-width: 0px;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+  margin-top: 2px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.verify-popup-password-button:hover {
+  background-color: rgb(42, 42, 201);
+  transform: scale(1.05);
+}
+
+.error-msg {
+  color: red;
+  font-size: 15px;
+  font-family: "Roboto";
+  margin-top: 5px;
+  text-align: center;
+  align-self: center;
+}
+
+@media (max-width: 768px) {
+  .password-item-header,
+  .password-item {
+    flex-wrap: nowrap; 
+    overflow-x: auto; 
+    font-size: 12px;
+  }
+
+  .password-item-header p,
+  .password-item p {
+    flex: 1 1 20%; 
+    white-space: normal; 
+    word-break: break-word; 
+  }
+}
+*/
+
+/* General Styles */
+
+.password-item {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  font-size: 18px;
+  background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+  transition: background 0.3s ease, transform 0.3s ease;
+  border-radius: 8px;
+  color: #333333;
+}
+
+.password-item-header:hover,
+.password-item:hover {
+  background: linear-gradient(135deg, #66a6ff 0%, #89f7fe 100%);
+  transform: translateY(-2px);
+}
+
+.password-item-header p,
+.password-item p {
+  margin: 0;
+  padding: 5px;
+  white-space: normal;
+  word-break: break-word;
+}
+
+.password-item-header p {
+  font-weight: bold;
+  color: #333;
+}
+
+.p-item-web-heading,
+.p-item-web {
+  flex: 2 1 40%;
+}
+
+.p-item-username-heading,
+.p-item-username,
+.p-item-password-password,
+.p-item-password {
+  flex: 1 1 25%;
+}
+
+.p-item-edit-edit,
+.p-item-edit,
+.p-item-delete-delete,
+.p-item-delete {
+  flex: 0 1 10%;
+}
+
+/* Button Styles */
+.edit-password-button,
+.delete-password-button {
+  background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.edit-password-button:hover,
+.delete-password-button:hover {
+  background: linear-gradient(135deg, #fecfef 0%, #ff9a9e 100%);
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon Styles */
+.edit-password-button svg,
+.delete-password-button svg {
+  color: #ffffff;
+}
+
+/* Popup Container */
+.password-check-popup-container {
+  min-width: 30vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 240px;
+  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+  border-radius: 8px;
+  padding: 20px;
+  transition: background 0.5s ease, transform 0.5s ease;
+}
+
+.password-check-popup-container:hover {
+  background: linear-gradient(135deg, #ebedee 0%, #fdfbfb 100%);
+  transform: translateY(-2px);
+}
+
+.password-check-popup-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 6px;
+  width: 100%;
+}
+
+.password-check-desc {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.password-check-password-input {
+  font-size: 16px;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  border-width: 0px;
+  border-radius: 8px;
+  padding: 15px;
+  width: 80%;
+  margin-bottom: 8px;
+  background: linear-gradient(135deg, #d3cce3 0%, #e9e4f0 100%);
+}
+
+.verify-popup-password-button {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  height: 38px;
+  width: 100px;
+  border-width: 0px;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+  margin-top: 2px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.verify-popup-password-button:hover {
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+  transform: scale(1.05);
+}
+
+.error-msg {
+  color: red;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  margin-top: 5px;
+  text-align: center;
+  align-self: center;
+}
+
+.password-item-eye-button {
+  background-color: #ffffff; /* Background color for the eye button */
+  border: none;
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.password-item-eye-button:hover {
+  background-color: #f0f0f0; /* Hover background color */
+  transform: scale(1.1);
+}
+
+.password-item-eye-button svg {
+  color: #555555; /* Eye icon color */
+}
+
+.password-check-popup-container {
+  min-width: 30vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 240px;
+  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+  border-radius: 8px;
+  padding: 20px;
+  transition: background 0.5s ease, transform 0.5s ease;
+}
+
+.password-check-popup-container:hover {
+  background: linear-gradient(135deg, #ebedee 0%, #fdfbfb 100%);
+  transform: translateY(-2px);
+}
+
+.password-check-popup-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 6px;
+  width: 100%;
+}
+
+.password-check-desc {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.password-check-password-input {
+  font-size: 16px;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  border-width: 0px;
+  border-radius: 8px;
+  padding: 15px;
+  width: 80%;
+  margin-bottom: 8px;
+  background: linear-gradient(135deg, #d3cce3 0%, #e9e4f0 100%);
+}
+
+.verify-popup-password-button {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  height: 38px;
+  width: 100px;
+  border-width: 0px;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+  margin-top: 2px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.verify-popup-password-button:hover {
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+  transform: scale(1.05);
+}
+
+.error-msg {
+  color: red;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  margin-top: 5px;
+  text-align: center;
+  align-self: center;
+}
+
+.user-password-content {
+  font-size: 20px;
+  font-family: "Roboto";
+  text-align: center;
+  font-weight: bold;
+}
+
+.specific-password {
+  color: green;
+}
+
+@media (max-width: 768px) {
+  .password-item-header,
+  .password-item {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    font-size: 12px;
+  }
+
+  .password-item-header p,
+  .password-item p {
+    flex: 1 1 20%;
+    white-space: normal;
+    word-break: break-word;
+  }
+}

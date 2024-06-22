@@ -1,0 +1,115 @@
+/*.home-bg {
+  min-height: 100vh;
+  max-height: 100%;
+  background-color: black;
+}*/
+
+/* General page styles */
+
+.home-bg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  max-height: 100%;
+  padding: 20px;
+  background: linear-gradient(90deg, rgb(248, 226, 203), rgb(255, 200, 160));
+  font-family: "Arial, sans-serif";
+  width: 100%;
+}
+
+.home-contents {
+  min-height: 90vh;
+  max-height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-contents-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.note-locker-heading {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #ff8c42; /* Matching color with gradient */
+}
+
+.home-description {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.home-buttons-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.try-notes-button,
+.try-passwords-button {
+  background-color: #ff8c42;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.try-notes-button:hover,
+.try-passwords-button:hover {
+  background-color: #e67e22;
+  transform: scale(1.05);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .note-locker-heading {
+    font-size: 2em;
+  }
+
+  .home-description {
+    font-size: 1em;
+  }
+
+  .try-notes-button,
+  .try-passwords-button {
+    font-size: 0.9em;
+    padding: 12px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .note-locker-heading {
+    font-size: 1.5em;
+  }
+
+  .home-description {
+    font-size: 0.9em;
+  }
+
+  .try-notes-button,
+  .try-passwords-button {
+    font-size: 0.8em;
+    padding: 10px 15px;
+  }
+}

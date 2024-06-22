@@ -121,3 +121,63 @@
   text-decoration: underline;
   cursor: pointer;
 }
+
+.signup-popup-container {
+  min-width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 400px;
+  background-color: whitesmoke;
+  border-radius: 8px;
+  padding-bottom: 10px;
+}
+
+.signup-popup-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 6px;
+  width: 100%;
+}
+
+.signup-popup-desc {
+  font-family: "Sans Serif";
+  font-size: 22px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.tick-img {
+  height: 150px;
+  width: 150px;
+  margin-bottom: 7px;
+}
+
+.go-login-page-button {
+  height: 40px;
+  width: 150px;
+  background-color: rgb(60, 60, 216);
+  color: white;
+  border-width: 0px;
+  border-radius: 8px;
+  font-family: "Roboto";
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.d-none {
+  display: none;
+}
+
+.login-link-button {
+  text-decoration: none;
+  color: white;
+}

@@ -85,10 +85,15 @@
   margin-bottom: 5px;
 }
 
-.no-account-text {
+.no-account-text,
+.forget-password-text {
   color: white;
   font-size: 17px;
   font-family: "Roboto";
+}
+
+.forget-password-text {
+  text-align: left;
 }
 
 .create-anchor,

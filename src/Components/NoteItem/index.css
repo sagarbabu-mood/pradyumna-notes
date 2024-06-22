@@ -1,0 +1,195 @@
+/*.note-item {
+  list-style-type: none;
+  width: 100%;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  border-width: 1px;
+  border-style: solid;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.note-title {
+  font-weight: bold;
+  font-size: 25px;
+  font-family: "Sans Serif";
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.note-item-first {
+  min-width: 150px;
+  max-width: 660px;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.note-item-content {
+  font-weight: normal;
+  font-size: 17px;
+  font-family: "Roboto";
+  margin-left: 5px;
+}
+
+.note-item-buttons-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: auto;
+}
+
+.edit-note-button,
+.delete-note-button {
+  height: 40px;
+  width: 40px;
+  border-radius: 8px;
+  border-width: 0px;
+
+  cursor: pointer;
+  outline: none;
+  margin: 7px;
+}
+
+.edit-note-button {
+  background-color: rgb(245, 245, 80);
+}
+
+.delete-note-button {
+  background-color: red;
+}
+
+@media screen and (max-width: 768px) {
+  .note-item-first {
+    max-width: 80%;
+  }
+}
+*/
+
+/* General styles for the note item */
+.note-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 10px 0;
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Styles for the note title */
+.note-title,
+.note-description {
+  font-weight: bold;
+  font-size: 28px;
+  font-family: "Roboto";
+  color: #333333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  margin: 0px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.note-description {
+  font-size: 22px;
+}
+
+/* Container for the first part of the note item */
+.note-item-first {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 150px;
+  max-width: 80%; /* Adjust as needed */
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+/* Content within the note title */
+.note-item-content-title,
+.note-item-content-description {
+  font-weight: bold;
+  font-size: 28px;
+  font-family: "Roboto";
+  margin-left: 5px;
+  color: #333333;
+}
+
+.note-item-content-description {
+  font-weight: normal;
+  font-size: 20px;
+}
+/* Container for the buttons */
+.note-item-buttons-container {
+  display: flex;
+  gap: 10px;
+}
+
+/* Button styles */
+.edit-note-button,
+.delete-note-button {
+  background: #ffffff;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.edit-note-button:hover,
+.delete-note-button:hover {
+  background: #f0f0f0;
+  transform: scale(1.1);
+}
+
+/* Icon styles */
+.edit-note-button svg,
+.delete-note-button svg {
+  color: #ff6b6b; /* Adjust icon color as needed */
+}
+
+/* Hover effects for the note item */
+.note-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.note-item-link {
+  text-decoration: none;
+  color: #333333;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .note-item-first {
+    max-width: 80%;
+  }
+
+  .note-title,
+  .note-description {
+    max-width: 100%;
+    font-size: 22px;
+  }
+
+  .note-item-content-title {
+    font-size: 18px;
+  }
+
+  .note-item-content-description {
+    font-size: 16px;
+  }
+
+  .note-item-buttons-container {
+    justify-content: flex-end;
+  }
+}

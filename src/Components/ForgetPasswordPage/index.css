@@ -1,0 +1,220 @@
+.forget-password-bg {
+  min-height: 100vh;
+  max-height: 100%;
+  background-image: url("https://res.cloudinary.com/daxizvsge/image/upload/v1712820173/bg_wlo9lh.webp");
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  filter: brightness(80%);
+  background-position: center center;
+}
+/* Container */
+.forget-inner-container,
+.enter-otp-container,
+.change-password-container,
+.success-change-password-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Input Field */
+.email-input,
+.otp-input,
+.new-password-input,
+.confirm-new-password-input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease;
+}
+
+.email-input:focus {
+  border-color: #6a11cb;
+  outline: none;
+}
+
+/* Button */
+.get-otp-button {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background: linear-gradient(
+    90deg,
+    #6a11cb,
+    #2575fc
+  ); /* Gradient background */
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.get-otp-button:hover {
+  background: linear-gradient(
+    90deg,
+    #2575fc,
+    #6a11cb
+  ); /* Inverted gradient on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.get-otp-button:active {
+  background: linear-gradient(
+    90deg,
+    #6a11cb,
+    #2575fc
+  ); /* Original gradient on click */
+  transform: translateY(0); /* No lift on click */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Original shadow on click */
+}
+
+.error-email-msg {
+  font-size: 15px;
+  color: red;
+  font-family: "Roboto";
+}
+
+.resend-otp {
+  font-size: 14px;
+  color: #6a11cb;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 15px;
+  transition: color 0.3s ease;
+}
+
+.resend-otp:hover {
+  color: #2575fc;
+}
+
+/* Submit OTP Button */
+.submit-otp-button,
+.new-password-submit {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background: linear-gradient(
+    90deg,
+    #6a11cb,
+    #2575fc
+  ); /* Gradient background */
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin-top: 10px;
+}
+
+.submit-otp-button,
+.new-password-submit:hover {
+  background: linear-gradient(
+    90deg,
+    #2575fc,
+    #6a11cb
+  ); /* Inverted gradient on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.submit-otp-button,
+.new-password-submit:active {
+  background: linear-gradient(
+    90deg,
+    #6a11cb,
+    #2575fc
+  ); /* Original gradient on click */
+  transform: translateY(0); /* No lift on click */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Original shadow on click */
+}
+
+.d-none {
+  display: none;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .forget-inner-container,
+  .enter-otp-container,
+  .change-password-container,
+  .success-change-password-container {
+    padding: 15px;
+    max-width: 90%;
+  }
+
+  .email-input,
+  .otp-input,
+  .new-password-input,
+  .confirm-new-password-input {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+
+  .get-otp-button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .resend-otp {
+    font-size: 12px;
+  }
+
+  .submit-otp-button,
+  .new-password-submit {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .forget-inner-container,
+  .enter-otp-container,
+  .change-password-container,
+  .success-change-password-container {
+    padding: 10px;
+    width: 70%;
+    height: 150px;
+  }
+
+  .email-input,
+  .otp-input,
+  .new-password-input,
+  .confirm-new-password-input {
+    font-size: 15px;
+    padding: 12px;
+  }
+
+  .get-otp-button {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+  .resend-otp {
+    font-size: 10px;
+  }
+
+  .submit-otp-button,
+  .new-password-submit {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+}

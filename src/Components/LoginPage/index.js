@@ -19,12 +19,15 @@ class LoginPage extends Component {
       },
       body: JSON.stringify(details),
     };
-    const response = await fetch("http://localhost:3001/login/", options);
+    const response = await fetch(
+      "https://note-lock-backend-production.up.railway.app/login/",
+      options
+    );
     const data = await response.json();
     if (response.ok === true) {
       Cookies.set("jwt_token", data.jwtToken, { expires: 30 });
       const { history } = this.props;
-      history.replace("/");
+      history.replace("/note-locker/");
     } else {
       this.setState({ errorMsg: data.Error });
     }
@@ -51,7 +54,7 @@ class LoginPage extends Component {
     const { username, password, errorMsg } = this.state;
     const token = Cookies.get("jwt_token");
     if (token !== undefined) {
-      return <Redirect to="/" />;
+      return <Redirect to="/note-locker/" />;
     }
     return (
       <div className="login-bg">
@@ -91,10 +94,20 @@ class LoginPage extends Component {
 
             <p className="no-account-text">
               Didn't have an account?{" "}
-              <Link to="/sign-up" className="create-anchor" id="createOne">
+              <Link
+                to="/note-locker/sign-up"
+                className="create-anchor"
+                id="createOne"
+              >
                 Create one
               </Link>
             </p>
+            <Link
+              to="/note-locker/forget-password"
+              className="forget-password-text"
+            >
+              Forget Password?
+            </Link>
           </form>
         </div>
       </div>
