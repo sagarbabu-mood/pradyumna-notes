@@ -44,7 +44,7 @@ const App = () => (
       path="/note-locker/password/:passwordId"
       component={PasswordEditPage}
     />
-    <Route exact path="/note-locker/bad-path" component={NotFound} />
+    <ProtectedRoute exact path="/note-locker/bad-path" component={NotFound} />
     <Redirect to="/note-locker/bad-path" />
   </Switch>
 );
